@@ -27,8 +27,8 @@ logger = logging.getLogger(__name__)
 
 def rangliste(bot, update):
     #Send rangliste
-    text = kicktipp.get_data()
-    update.message.reply_text(text)
+    text = kicktipp.get_data()	
+    update.message.reply_text(text)	
 
 def von(bot, update):
     #Send rangliste
@@ -38,6 +38,10 @@ def von(bot, update):
 def schwul(bot, update):
     #Send rangliste
     text = "#nohomo"
+    update.message.reply_text(text)
+
+def bezahlt(bot, update):
+    text = 'Marius und Jasper, wo ist der rest?'
     update.message.reply_text(text)
           
      
