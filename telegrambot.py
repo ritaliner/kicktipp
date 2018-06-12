@@ -62,7 +62,7 @@ def main():
     dp.add_handler(CommandHandler("rangliste", rangliste))
     dp.add_handler(CommandHandler("von", von))
     dp.add_handler(CommandHandler("schwul", schwul))
-    
+    dp.add_handler(CommandHandler("bezahlt", bezahlt))
     # log all errors
     dp.add_error_handler(error)
 
