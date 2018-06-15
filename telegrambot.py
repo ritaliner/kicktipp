@@ -39,6 +39,10 @@ def schwul(bot, update):
     #Send rangliste
     text = "#nohomo"
     update.message.reply_text(text)
+
+def bezahlt(bot, update):
+    text = "Error! Nur Geiz gefunden"
+    update.message.reply_text(text)
     
 def aktuell(bot, update):
     #Send rangliste
@@ -63,6 +67,7 @@ def main():
     dp.add_handler(CommandHandler("von", von))
     dp.add_handler(CommandHandler("schwul", schwul))
     dp.add_handler(CommandHandler("aktuell", aktuell))
+    dp.add_handler(CommandHandler("bezahlt", bezahlt))
     
     # log all errors
     dp.add_error_handler(error)
